@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    /* ! custom colors from figma */
+    --color-avocado-500: #8bac3e;
+    --color-avocado-200: #f0feeb;
+    --color-avocado-100: #f9fff6;
+
+    --color-light-teal-500: #40a2b1;
+    --color-light-teal-100: #e6f3f5;
+
+    --color-ocean-blue-500: #405eb6;
+    --color-ocean-blue-100: #eaeefa;
+
+    --color-deep-rose-500: #b23f74;
+    --color-deep-rose-100: #f9eef3;
+
+    --color-lime-green-500: #a4b441;
+    --color-lime-green-100: #f3f7d9;
+
+    --color-scarlet-500: #e7462d;
+
+    --color-dim-gray: #757575;
+    --color-light-gray: #f2f2f2;
+    --color-mask-gray: #c4c4c4;
+
+    --color-cupcake: #f0feeb;
+    --color-pizza: #e4f2f4;
+    --color-kebab: #eaeefa;
+    --color-kebab: #eaeefa;
+    --color-salmon: #f9eef3;
+    --color-doughnut: #f3f7d9;
+
+    /* ! responsive font */
+    --text-xs: clamp(0.75rem, 0.7vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.85vw, 1rem);
+    --text-base: clamp(1rem, 1vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.2vw, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.5vw, 1.5rem);
+    --text-2xl: clamp(1.5rem, 2vw, 1.875rem);
+    --text-3xl: clamp(1.875rem, 2.5vw, 2.25rem);
+    --text-4xl: clamp(2.25rem, 3vw, 3rem);
+    --text-5xl: clamp(3rem, 4vw, 4rem);
+}
+
+@utility container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+@layer utilities {
+    .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-none::-webkit-scrollbar {
+        display: none;
+    }
+}
